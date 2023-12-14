@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
         <main>
           {children}
           <Analytics />
+          <SpeedInsights />
           <PrismicPreview repositoryName={repositoryName} />
         </main>
       </body>
