@@ -5,6 +5,8 @@ import { Inter, Libre_Baskerville } from "next/font/google";
 import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
 
+import { Analytics } from '@vercel/analytics/react';
+
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -27,6 +29,7 @@ export default function RootLayout({ children }) {
       <body className="overflow-x-hidden antialiased">
         <main>
           {children}
+          <Analytics />
           <PrismicPreview repositoryName={repositoryName} />
         </main>
       </body>
