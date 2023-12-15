@@ -25,7 +25,7 @@ const libre_baskerville = Libre_Baskerville({
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
+      lang="fr-ca"
       className={`${inter.className} ${libre_baskerville.className}`}
     >
       <body className="overflow-x-hidden antialiased">
