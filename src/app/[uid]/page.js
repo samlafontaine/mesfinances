@@ -39,7 +39,12 @@ export default async function Page({ params }) {
   const settings = await client.getSingle("settings");
 
   return (
-    <Layout navigation={navigation} settings={settings}>
+    <Layout 
+      navigation={navigation} 
+      settings={settings}
+      withHeaderDivider={false}
+      withProfile={false}
+    >
       <SliceZone slices={page.data.slices} components={components} />
     </Layout>
   );
