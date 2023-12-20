@@ -1,6 +1,6 @@
 "use client";
 
-import { SliceSimulator } from "../slice-simulator/adapter-next/simulator";
+import { SliceSimulator } from "../../../node_modules/@slicemachine/adapter-next//simulator";
 import { SliceZone } from "@prismicio/react";
 
 import { components } from "@/slices";
