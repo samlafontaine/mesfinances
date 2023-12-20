@@ -2,9 +2,9 @@ import * as prismic from "@prismicio/client";
 import { SliceZone } from "@prismicio/react";
 import { notFound } from "next/navigation";
 
-import { createClient } from "@/prismicio";
-import { components } from "@/slices";
-import { Layout } from "@/components/Layout";
+import { createClient } from "../../prismicio";
+import { components } from "../../slices";
+import { Layout } from "../../components/Layout";
 
 export async function generateMetadata({ params }) {
   const client = createClient();
