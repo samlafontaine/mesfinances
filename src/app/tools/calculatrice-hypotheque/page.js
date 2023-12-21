@@ -25,7 +25,6 @@ export default async function Page() {
       <Link href="/tools" className="font-sans tracking-tight text-slate-500">
           &larr; Voir les autres outils
         </Link>
-      
       <App />
       </Bounded>
     </Layout>
