@@ -25,7 +25,7 @@ export default async function Page() {
       <Link href="/tools" className="font-sans tracking-tight text-slate-500">
           &larr; Voir les autres outils
         </Link>
-      <h1 className="mb-3 text-3xl font-sans font-semibold tracking-tighter text-slate-800 md:text-4xl">Calculatrice Hypothécaire</h1>
+      
       <App />
       </Bounded>
     </Layout>

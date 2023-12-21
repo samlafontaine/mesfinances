@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Heading } from "../../../components/Heading";
 
 const MortgageCalculator = () => {
     const [mortgageAmount, setMortgageAmount] = useState('');
@@ -61,16 +62,18 @@ const MortgageCalculator = () => {
     };
 
     return (
-        <div className="container text-center">
-            <h1>Mortgage Calculator 🏡</h1>
-            <p>See your mortgage payment schedule</p>
-            <div className="container">
-                <div className="row">
+        <div className="text-center font-sans">
+            <h1 className="mb-3 mt-8 text-2xl font-sans font-semibold tracking-tighter text-slate-800 md:text-4xl">Calculez votre échéancier de remboursement de prêt hypothécaire</h1>
+            <div className='flex justify-center'>
+            <p className='mb-3 mt-3 font-sans text-slate-400 text-lg w-3/4'>Voyez combien d'intérêts et de capital vous remboursez à chaque mois. Cette calculatrice est basée sur un taux d'intérêt annuel et des remboursements mensuels.</p>
+            </div>
+            <div className="text-center">
+                <div className="flex justify-center space-x-4 mb-8 mt-8">
                     <div className="col-sm-4">
                         <input
                             type="text"
-                            className="form-control"
-                            placeholder="Mortgage Amount"
+                            className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-100 sm:text-sm sm:leading-6 font-sans"
+                            placeholder="Hypothèque"
                             value={mortgageAmount}
                             onChange={handleMortgageAmountChange}
                         />
@@ -78,8 +81,8 @@ const MortgageCalculator = () => {
                     <div className="col-sm-4">
                         <input
                             type="text"
-                            className="form-control"
-                            placeholder="Interest Rate"
+                            className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-100 sm:text-sm sm:leading-6 font-sans"
+                            placeholder="Taux d'intérêt"
                             value={interestRate}
                             onChange={handleInterestRateChange}
                         />
@@ -87,8 +90,8 @@ const MortgageCalculator = () => {
                     <div className="col-sm-4">
                         <input
                             type="number"
-                            className="form-control"
-                            placeholder="Number of Years"
+                            className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-100 sm:text-sm sm:leading-6 font-sans"
+                            placeholder="Années"
                             value={years}
                             onChange={(e) => setYears(e.target.value)}
                         />
@@ -96,35 +99,35 @@ const MortgageCalculator = () => {
                 </div>
             </div>
 
-            <div className="container text-center">
-                <button type="submit" className="btn btn-dark" onClick={calculate}>
-                    Calculate
+            <div className="text-center mb-6">
+                <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full font-sans mr-1" onClick={calculate}>
+                    Calculer
                 </button>
-                <button type="submit" className="btn btn-light" onClick={reload}>
-                    Restart
+                <button type="submit" className="bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full font-sans" onClick={reload}>
+                    Rafraîchir
                 </button>
             </div>
 
             {showResults && (
-                <div className="container">
-                    <span className="text-center lead mark">Monthly Payment: {monthlyPayment}$</span> <br /><br />
-                    <div class="table-responsive-lg">
-                        <table className="table table-bordered table-sm table-hover">
-                        <thead class="table-light">
+                <div className="text-center">
+                    <span className="text-center text-xl font-sans">Paiement mensuel: <span className="font-sans underline decoration-blue-500">{monthlyPayment}$</span></span> <br /><br />
+                    <div>
+                        <table className="w-full">
+                        <thead className="not-prose relative bg-slate-100 rounded-xl overflow-hidden dark:bg-slate-800/25">
                             <tr>
-                                <th>Month</th>
-                                <th>Capital Paid</th>
-                                <th>Interest Paid</th>
-                                <th>Mortgage Remaining</th>
+                                <th className="font-sans border border-slate-300">Mois</th>
+                                <th className="font-sans border border-slate-300">Capital Payé</th>
+                                <th className="font-sans border border-slate-300">Intérêts payés</th>
+                                <th className="font-sans border border-slate-300">Hypothèque Restante</th>
                             </tr>
                         </thead>
                         <tbody>
                             {resultList.map((item, index) => (
                                 <tr key={index}>
-                                    <td>Month {index + 1}</td>
-                                    <td>{item.principal.toFixed(2)}</td>
-                                    <td>{item.interest.toFixed(2)}</td>
-                                    <td>{item.mortgageRemaining.toFixed(2)}</td>
+                                    <td className="font-sans border border-slate-300">Mois {index + 1}</td>
+                                    <td className="font-sans border border-slate-300">{item.principal.toFixed(2)}</td>
+                                    <td className="font-sans border border-slate-300">{item.interest.toFixed(2)}</td>
+                                    <td className="font-sans border border-slate-300">{item.mortgageRemaining.toFixed(2)}</td>
                                 </tr>
                             ))}
                         </tbody>
