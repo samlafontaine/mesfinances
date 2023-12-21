@@ -107,7 +107,7 @@ export default async function Page({ params }) {
             <HorizontalDivider />
             <div className="w-full">
               <Heading size="2xl" className="mb-10">
-                Latest articles
+                Articles récents
               </Heading>
               <ul className="grid grid-cols-1 gap-12 font-sans">
                 {latestArticles.map((article) => (
