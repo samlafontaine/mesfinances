@@ -14,22 +14,22 @@ export const metadata = {
   openGraph: {
     title: 'Calculatrice Hypothécaire | Mes Finances',
     description: "Voyez combien d'intérêts et de capital vous remboursez à chaque mois. Cette calculatrice est basée sur un taux d'intérêt annuel et des remboursements mensuels.",
-    url: 'https://nextjs.org',
-    siteName: 'Mesfinances.co',
+    url: 'https://mesfinances.co',
+    siteName: 'Mes Finances',
     images: [
       {
-        url: 'https://nextjs.org/og.png',
+        url: '',
         width: 800,
         height: 600,
       },
       {
-        url: 'https://nextjs.org/og-alt.png',
+        url: '',
         width: 1800,
         height: 1600,
         alt: 'My custom alt',
       },
     ],
-    locale: 'en_US',
+    locale: 'fr_CA',
     type: 'website',
   },
 };
