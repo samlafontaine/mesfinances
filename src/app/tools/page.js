@@ -13,7 +13,9 @@ export default async function Page() {
   const settings = await client.getSingle("settings");
 
   return (
-    <Layout
+    <>
+      <title>Outils financiers | Mes Finances</title>
+      <Layout
       withHeaderDivider={false}
       navigation={navigation}
       settings={settings}
@@ -28,5 +30,7 @@ export default async function Page() {
         </ul>
       </Bounded>
     </Layout>
+    </>
+    
   );
 }

@@ -62,6 +62,8 @@ const MortgageCalculator = () => {
     };
 
     return (
+        <>
+        <title>Calculatrice Hypothécaire | Mes Finances</title>
         <div className="text-center font-sans">
             <h1 className="mb-3 mt-8 text-2xl font-sans font-semibold tracking-tighter text-slate-800 md:text-4xl">Calculez votre échéancier de remboursement de prêt hypothécaire</h1>
             <div className='flex justify-center'>
@@ -137,6 +139,8 @@ const MortgageCalculator = () => {
             )}
 
         </div>
+        </>
+        
     );
 };
 
