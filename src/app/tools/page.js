@@ -6,6 +6,11 @@ import { Layout } from "../../components/Layout";
 import { Bounded } from "../../components/Bounded";
 import { Article } from "../../components/Article";
 
+export const metadata = {
+  title: 'Outils Financiers | Mes Finances',
+  description: "Liste d'outils financiers pour aider à prendre de meiilleures décisions financières.",
+}
+
 
 export default async function Page() {
   const client = createClient();
@@ -14,7 +19,6 @@ export default async function Page() {
 
   return (
     <>
-      <title>Outils financiers | Mes Finances</title>
       <Layout
       withHeaderDivider={false}
       navigation={navigation}
