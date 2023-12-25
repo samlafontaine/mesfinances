@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
       lang="fr-ca"
       className={`${inter.className} ${libre_baskerville.className}`}
     >
+
       <body className="overflow-x-hidden antialiased">
         <main>
           {children}
