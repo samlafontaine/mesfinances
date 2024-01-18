@@ -11,12 +11,12 @@ const defaultComponents = {
     </Heading>
   ),
   heading2: ({ children }) => (
-    <Heading as="h3" size="2xl" className="mb-7 last:mb-0">
+    <Heading as="h3" size="3xl" className="mb-4 last:mb-0">
       {children}
     </Heading>
   ),
   heading3: ({ children }) => (
-    <Heading as="h4" size="xl" className="mb-7 last:mb-0">
+    <Heading as="h4" size="xl" className="mb-5 last:mb-0">
       {children}
     </Heading>
   ),
