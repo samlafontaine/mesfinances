@@ -1,12 +1,8 @@
 import "../styles/globals.css";
-
 import { Inter, Libre_Baskerville } from "next/font/google";
-
 import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@prismicio/next";
-
 import { Analytics } from '@vercel/analytics/react';
-
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({
@@ -14,19 +10,11 @@ const inter = Inter({
   display: "swap",
 });
 
-const libre_baskerville = Libre_Baskerville({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  weight: ["400", "700"],
-  variable: "--libre-baskerville",
-  display: "swap",
-});
-
 export default function RootLayout({ children }) {
   return (
     <html
       lang="fr-ca"
-      className={`${inter.className} ${libre_baskerville.className}`}
+      className={`${inter.className}`}
     >
 
       <body className="overflow-x-hidden antialiased">

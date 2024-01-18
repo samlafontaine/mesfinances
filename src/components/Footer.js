@@ -47,7 +47,7 @@ export function Footer({ withSignUpForm = true, settings }) {
         <HorizontalDivider />
         {withSignUpForm && <SignUpForm settings={settings} />}
         <div className="font-sans mx-auto w-full text-center text-xs font-semibold tracking-tight text-slate-500">
-          Tous droits réservés – PapaFI 2023!
+          Tous droits réservés – Mes Finances 2024.
         </div>
       </div>
     </Bounded>
