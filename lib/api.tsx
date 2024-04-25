@@ -61,7 +61,7 @@ export async function getPostById(id: string) {
     ...data,
     title: data.title,
     id: realId,
-    date: `${data.date?.toLocaleString("en-US", {
+    date: `${data.date?.toLocaleString("fr-CA", {
       month: "long",
       day: "numeric",
       year: "numeric",
