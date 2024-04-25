@@ -1,6 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import Thumbnail from "./components/thumbnail";
 
 export default function Page() {
   return (
@@ -15,48 +13,36 @@ export default function Page() {
         </p>
       </div>
       <div className="grid md:grid-cols-3 gap-4">
-        <div className="flex flex-col p-1 rounded-md bg-zinc-50 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 group">
-          <Link href="https://www.quickedit.ai">
-            <div className="flex flex-col p-1 rounded-md bg-zinc-100 gap-6 dark:bg-zinc-800">
-              <div className="bg-gradient-to-r from-red-300 to-rose-500 min-h-40 rounded flex items-center justify-center">
-                <Image
-                  src="/logo-full.png"
-                  width={100}
-                  height={100}
-                  alt="Picture of the author"
-                />
-              </div>
-              <div className="flex flex-col gap-2 px-2">
-                <div className="flex flex-row justify-between items-center">
-                  <div className="flex flex-row items-center gap-1">
-                    <h2 className="text-lg tracking-tighter group-hover:underline underline-offset-3 transition duration-300 ease-in-out">
-                      Calculateur Plex
-                    </h2>
-                    <ArrowUpRight
-                      strokeWidth={1.5}
-                      size={18}
-                      className="group-hover:rotate-45 transition duration-150 ease-in-out"
-                    />
-                  </div>
-                  <div className="flex flex-row gap-2">
-                    <p className="px-2 bg-rose-100 text-rose-500 uppercase rounded text-sm dark:bg-rose-500 dark:text-rose-100">
-                      wip
-                    </p>
-                    <p className="px-2 bg-zinc-900 text-zinc-200 uppercase rounded text-sm dark:bg-zinc-200 dark:text-zinc-900">
-                      2024
-                    </p>
-                  </div>
-                </div>
-                <p className="text-left text-sm mb-2">
-                  The impact of video is undeniable. Yet, the tools we have at
-                  our disposal today to make and edit them are often too complex
-                  or expensive. Together with a friend, we're building the
-                  future of video making.
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div>
+        <Thumbnail
+          link="/outils/calculateur-plex"
+          title="Calculateur Plex"
+          imageSrc="/logo-full.png"
+          description="Vous êtes-vous déjà demandé combien ça coûte, vraiment, un immeuble à revenus? 
+          Et quel serait le potentiel projeté de revenus et de profits? 
+          C'est ce que vous pouvez calculer et estimer facilement à l'aide de ce fichier."
+          year="2024"
+          tag="Immobilier"
+        />
+        <Thumbnail
+          link="/outils/acheter-vs-louer"
+          title="Acheter vs. Louer"
+          imageSrc="/logo-full.png"
+          description="Vous êtes-vous déjà demandé combien ça coûte, vraiment, un immeuble à revenus? 
+          Et quel serait le potentiel projeté de revenus et de profits? 
+          C'est ce que vous pouvez calculer et estimer facilement à l'aide de ce fichier."
+          year="2024"
+          tag="Immobilier"
+        />
+        <Thumbnail
+          link="/outils/calculatrice-hypothecaire"
+          title="Calculatrice Hypothécaire"
+          imageSrc="/logo-full.png"
+          description="Vous êtes-vous déjà demandé combien ça coûte, vraiment, un immeuble à revenus? 
+          Et quel serait le potentiel projeté de revenus et de profits? 
+          C'est ce que vous pouvez calculer et estimer facilement à l'aide de ce fichier."
+          year="2023"
+          tag="Immobilier"
+        />
       </div>
     </div>
   );
