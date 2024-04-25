@@ -3,7 +3,7 @@ title: Bienvenue au blogue
 date: 2024-04-24
 ---
 
-J’ai longtemps voulu écrire. En fait, j’ai tenté l’expérience à maintes reprises, sans jamais persister assez longtemps pour me dire *bloggueur.* Ce n’est pas faute de talents, du moins, je ne crois pas. Je crois plutôt que ce manque de rigueur s’explique par mon faible intérêt envers les autres niches dans lesquelles j’ai tenté de me créer une place. Écrire, c’est difficile. Ça demande du temps, beaucoup de réflexions, et surtout un grand intérêt pour le sujet. Sans ça, difficile de créer du contenu intéressant de façon régulière. Ce qui m’amène à ce site que je lance aujourd’hui: **Mes Finances**. Il est accompagné d'une infolettre, ***À Contre Courant***, à laquelle mes lecteurs pourront s'abonner afin de recevoir mes articles en primeur.
+J’ai longtemps voulu écrire. En fait, j’ai tenté l’expérience à maintes reprises, sans jamais persister assez longtemps pour me dire *bloggueur.* Ce n’est pas faute de talents, du moins, je ne crois pas. Je crois plutôt que ce manque de rigueur s’explique par mon faible intérêt envers les autres niches dans lesquelles j’ai tenté de me créer une place. Écrire, c’est difficile. Ça demande du temps, beaucoup de réflexions, et surtout un grand intérêt pour le sujet. Sans ça, difficile de créer du contenu intéressant de façon régulière. Ce qui m’amène à ce site que je lance aujourd’hui: **Mes Finances**. Il est accompagné d'une infolettre, *À Contre Courant*, à laquelle mes lecteurs pourront s'abonner afin de recevoir mes articles en primeur.
 
 ## Pourquoi démarrer ce blog
 
