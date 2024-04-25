@@ -13,12 +13,12 @@ export default async function Post({
     <>
       <Link
         href="/blog"
-        className="text-sm text-neutral-600 dark:text-neutral-400 invisible md:visible mb-8"
+        className="text-sm text-neutral-600 dark:text-neutral-400 invisible md:visible mb-8 -mt-8"
       >
-        &larr; back to the blog
+        &larr; Retour
       </Link>
       <article className="prose prose-quoteless prose-neutral slide-up dark:prose-invert">
-        <h1 className="title font-medium text-3xl tracking-tighter max-w-[650px] mb-2">
+        <h1 className="title font-semibold text-4xl tracking-tighter max-w-[650px] mb-2">
           {title}
         </h1>
         <div className="flex justify-between items-center text-sm max-w-[650px]">

@@ -8,8 +8,10 @@ export default async function Page() {
     <div className="slide-up">
       <h1 className="text-4xl font-semibold mb-4 tracking-tighter">Blog</h1>
       <p className="mb-8">
-        Thoughts on product management, company culture, leadership, growth,
-        strategy and everything in between.
+        Si, comme moi, tu penses souvent à tes finances personnelles et que tu
+        as envie de prendre tes finances en main, tu es à la bonne place. Ici,
+        tu trouveras une série d'articles qui traitent des finances personnelles
+        sous tous ses angles. Bonne lecture!
       </p>
       <ul className="space-y-2">
         {posts.map((post) => {

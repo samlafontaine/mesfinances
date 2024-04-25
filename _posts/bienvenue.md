@@ -5,7 +5,7 @@ date: 2024-04-24
 
 J’ai longtemps voulu écrire. En fait, j’ai tenté l’expérience à maintes reprises, sans jamais persister assez longtemps pour me dire *bloggueur.* Ce n’est pas faute de talents, du moins, je ne crois pas. Je crois plutôt que ce manque de rigueur s’explique par mon faible intérêt envers les autres niches dans lesquelles j’ai tenté de me créer une place. Écrire, c’est difficile. Ça demande du temps, beaucoup de réflexions, et surtout un grand intérêt pour le sujet. Sans ça, difficile de créer du contenu intéressant de façon régulière. Ce qui m’amène à ce site que je lance aujourd’hui: **Mes Finances**. Il est accompagné d'une infolettre, ***À Contre Courant***, à laquelle mes lecteurs pourront s'abonner afin de recevoir mes articles en primeur.
 
-### Pourquoi démarrer ce blog
+## Pourquoi démarrer ce blog
 
 Il y a de ça maintenant plusieurs années, j’ai développé un grand intérêt pour le monde de la finance personnelle, et cet intérêt ne cesse de grandir. C’est devenu une passion, quasiment un *hobby*. Je lis des livres sur le sujet, des articles, j’écoute des podcasts et je m’éduque constamment sur le sujet, de toutes sortes de manières. Ce n’est pas quelque chose que je force, mais qui est plutôt arrivé de façon naturelle dans ma vie au courant de ma vingtaine.
 
@@ -13,11 +13,11 @@ Il y a des millions de sujets plus intéressants que la finance personnelle, alo
 
 C’est principalement de ça que va traiter l’infolettre. Pour ce qui est du nom de mon infolettre, je trouvais ça accrocheur. À Contre Courant, ça représente une façon de penser aux finances personnelles et à un mode de vie qui va à l’encontre de la norme. Sans prétendre avoir la recette magique au bonheur et à la richesse, j’aimerais présenter à mes lecteurs des idées nouvelles sur ces sujets. Je ne crois pas qu’il y ait une seule bonne voie dans la vie. Chacun fait son chemin. Mais je crois qu’il est important d’être exposé à différentes réalités afin de réaliser qu’il y a plus d’une façon de vivre, de dépenser et d’être heureux.
 
-### De quoi ce blog traite-t-il ?
+## De quoi ce blog traite-t-il ?
 
 Je voudrais m’attarder aux concepts de la finance personnelle dans un context québécois: les différents régimes, l’impôt, l’épargne, etc. J’aimerais aussi traiter de *mode de vie* – comment maximiser l’épargne et l’investissement tout en maximisant le bonheur et l’épanouissement. J’aimerais aussi, éventuellement, interviewer des gens qui ont atteint l’indépendance financière afin d’apprendre de leur parcours et d’inspirer mes lecteurs.
 
-### Qui écrit ce blog ?
+## Qui écrit ce blog ?
 
 Je m’appelle Sam. Pour l’instant, j’ai décidé de ne pas inclure mon nom de famille au cas où j’aurais l’intention de partager des informations plus sensibles et personnelles dans mes publications. Je suis un papa Montréalais de 31 ans. Je travaille dans le milieu des technologies de l’information.
 
