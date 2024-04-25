@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Schibsted_Grotesk } from "next/font/google";
 import { Navbar } from "./components/nav";
 import { Footer } from "./components/footer";
 import { Analytics } from "@vercel/analytics/react";
@@ -7,7 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { Providers } from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Schibsted_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mesfinances.co"),
@@ -49,8 +49,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
-      <body className="antialiased max-w-5xl mb-12 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
+    <html lang="en" className={font.className} suppressHydrationWarning>
+      <body className="antialiased max-w-4xl mb-12 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}

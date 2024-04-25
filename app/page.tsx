@@ -5,10 +5,13 @@ import { ArrowUpRight } from "lucide-react";
 export default function Page() {
   return (
     <div className="slide-up text-center">
-      <h1 className="text-2xl md:text-5xl mb-12 md:mb-20 tracking-tighter md:leading-snug font-medium">
+      <h1 className="text-2xl md:text-5xl tracking-tighter md:leading-snug font-semibold">
+        Prends tes finances 💸 en main ✋
+      </h1>
+      <p className="text-xl mb-12 md:mb-20 text-black/80">
         Calculatrices et ressources pour t'aider à prendre de meilleures
         décisions financières.
-      </h1>
+      </p>
       <div className="grid md:grid-cols-3 gap-4">
         <div className="flex flex-col p-1 rounded-md bg-zinc-50 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 group">
           <Link href="https://www.quickedit.ai">
