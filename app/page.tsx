@@ -17,6 +17,7 @@ export default function Page() {
           link="/outils/calculateur-plex"
           title="Calculateur Plex"
           imageSrc="/logo-full.png"
+          alt="Calculateur Plex"
           description="Vous êtes-vous déjà demandé combien ça coûte, vraiment, un immeuble à revenus? 
           Et quel serait le potentiel projeté de revenus et de profits? 
           C'est ce que vous pouvez calculer et estimer facilement à l'aide de ce fichier."
@@ -26,7 +27,8 @@ export default function Page() {
         <Thumbnail
           link="/outils/acheter-vs-louer"
           title="Acheter vs. Louer"
-          imageSrc="/logo-full.png"
+          imageSrc="/acheter-louer.png"
+          alt="Calculateur Acheter vs. Louer"
           description="Vous êtes-vous déjà demandé combien ça coûte, vraiment, un immeuble à revenus? 
           Et quel serait le potentiel projeté de revenus et de profits? 
           C'est ce que vous pouvez calculer et estimer facilement à l'aide de ce fichier."
@@ -37,6 +39,7 @@ export default function Page() {
           link="/outils/calculatrice-hypothecaire"
           title="Calculatrice Hypothécaire"
           imageSrc="/logo-full.png"
+          alt="Calculatrice hypothécaire"
           description="Vous êtes-vous déjà demandé combien ça coûte, vraiment, un immeuble à revenus? 
           Et quel serait le potentiel projeté de revenus et de profits? 
           C'est ce que vous pouvez calculer et estimer facilement à l'aide de ce fichier."

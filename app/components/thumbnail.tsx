@@ -7,6 +7,7 @@ interface ThumbnailProps {
   title: string;
   description: string;
   imageSrc: string;
+  alt: string;
   year: string;
   tag: string;
 }
@@ -16,6 +17,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
   title,
   description,
   imageSrc,
+  alt,
   year,
   tag,
 }) => {
@@ -31,12 +33,13 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
     <div className="flex flex-col p-1 rounded-md bg-zinc-50 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 group">
       <Link href={link}>
         <div className="flex flex-col p-1 rounded-md bg-zinc-100 gap-6 dark:bg-zinc-800">
-          <div className="bg-gradient-to-r from-red-300 to-rose-500 min-h-40 rounded flex items-center justify-center">
+          <div className="min-h-40 rounded flex items-center justify-center">
             <Image
               src={imageSrc}
-              width={100}
+              width={300}
               height={100}
-              alt="Picture of the author"
+              alt={alt}
+              className="rounded"
             />
           </div>
           <div className="flex flex-col gap-3 px-2">
