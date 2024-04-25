@@ -1,0 +1,64 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { Navbar } from "./components/nav";
+import { Footer } from "./components/footer";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import "./globals.css";
+import { Providers } from "./providers";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://mesfinances.co"),
+  title: {
+    default: "Mes Finances",
+    template: "%s | Mes Finances",
+  },
+  description:
+    "Outils, calculatrices et ressources pour t'aider à prendre de meilleures décisions financières.",
+  openGraph: {
+    title: "Mes Fiances",
+    description:
+      "Outils, calculatrices et ressources pour t'aider à prendre de meilleures décisions financières.",
+    url: "https://mesfinances.co",
+    siteName: "Mes Finances",
+    locale: "fr_CA",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: "Mes Finances",
+    card: "summary_large_image",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className={inter.className} suppressHydrationWarning>
+      <body className="antialiased max-w-5xl mb-12 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
+        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+          <Navbar />
+          {children}
+          <Analytics />
+          <SpeedInsights />
+          <Footer />
+        </main>
+      </body>
+    </html>
+  );
+}
