@@ -96,27 +96,29 @@ const MortgageCalculator: React.FC = () => {
 
   return (
     <div>
-      <h1 className="text-2xl mb-4 tracking-tighter">Mortgage Calculator 🏡</h1>
+      <h1 className="text-2xl md:text-3xl tracking-tighter md:leading-snug font-semibold mb-2">
+        Calculatrice hypothécaire 🏡
+      </h1>
       <p className="prose prose-neutral mb-8 dark:prose-invert">
-        See your mortgage payment schedule
+        Voyez votre calendrier d'amortissement hypothécaire.
       </p>
       <div className="w-full">
         <div className="grid grid-cols-1 gap-2 mb-8 md:grid-cols-3 md:gap-6">
           <Input
             type="text"
-            placeholder="Mortgage Amount"
+            placeholder="Montant de l'hypothèque"
             value={mortgageAmount}
             onChange={handleMortgageAmountChange}
           />
           <Input
             type="text"
-            placeholder="Interest Rate"
+            placeholder="Taux d'intérêt annuel"
             value={interestRate}
             onChange={handleInterestRateChange}
           />
           <Input
             type="number"
-            placeholder="Number of Years"
+            placeholder="Durée du prêt (années)"
             value={years}
             onChange={(e) => setYears(e.target.value)}
           />
@@ -125,24 +127,24 @@ const MortgageCalculator: React.FC = () => {
 
       <div className="flex justify-center space-x-2">
         <Button type="submit" onClick={calculate}>
-          Calculate
+          Calculer
         </Button>
         <Button variant="outline" type="submit" onClick={reload}>
-          Restart
+          Refaire
         </Button>
       </div>
 
       {showResults && (
         <div className="mt-8">
           <span className="flex justify-center mb-2">
-            Monthly Payment:{" "}
+            Paiements mensuels:{" "}
             <span className="text-blue-800 bg-blue-100 dark:text-white dark:bg-blue-500 px-1.5 rounded ml-1">
               {" "}
               {monthlyPayment}$
             </span>
           </span>
           <span className="flex justify-center">
-            Total Interest Paid:{" "}
+            Intérêts totaux payés:{" "}
             <span className="text-red-800 bg-red-100 dark:text-white dark:bg-red-500 px-1.5 rounded ml-1">
               {" "}
               {totalInterest}$
@@ -152,11 +154,11 @@ const MortgageCalculator: React.FC = () => {
             <TableCaption></TableCaption>
             <TableHeader>
               <TableRow>
-                <TableHead className="text-center">Month</TableHead>
-                <TableHead className="text-center">Capital Paid</TableHead>
-                <TableHead className="text-center">Interest Paid</TableHead>
+                <TableHead className="text-center">Mois</TableHead>
+                <TableHead className="text-center">Capital remboursé</TableHead>
+                <TableHead className="text-center">Intérêts payés</TableHead>
                 <TableHead className="text-center">
-                  Mortgage Remaining
+                  Balance hypothécaire
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -164,7 +166,7 @@ const MortgageCalculator: React.FC = () => {
               {resultList.map((item, index) => (
                 <TableRow>
                   <TableCell className="font-medium text-center">
-                    Month {index + 1}
+                    Mois {index + 1}
                   </TableCell>
                   <TableCell className="text-center">
                     {item.principal.toFixed(2)}
