@@ -30,7 +30,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
   const tagBgColor = tagBgColorMap[tag] || "bg-zinc-900";
 
   return (
-    <div className="flex flex-col p-1 rounded-md bg-zinc-50 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 group">
+    <div className="flex flex-col p-0.5 rounded-md bg-zinc-50 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 group">
       <Link href={link}>
         <div className="flex flex-col p-1 rounded-md bg-zinc-100 gap-6 dark:bg-zinc-800">
           <div className="min-h-40 rounded flex items-center justify-center">

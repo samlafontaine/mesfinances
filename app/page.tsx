@@ -12,40 +12,46 @@ export default function Page() {
           meilleures décisions financières.
         </p>
       </div>
-      <div className="grid md:grid-cols-3 gap-4">
-        <Thumbnail
-          link="/outils/calculateur-plex"
-          title="Calculateur Plex"
-          imageSrc="/calculateur-plex.png"
-          alt="Calculateur Plex"
-          description="Vous êtes-vous déjà demandé combien ça coûte, vraiment, un immeuble à revenus? 
+      <div className="grid md:grid-cols-3 gap-3">
+        <div className="flex flex-col gap-3">
+          <Thumbnail
+            link="/outils/calculateur-plex"
+            title="Calculateur Plex"
+            imageSrc="/calculateur-plex.png"
+            alt="Calculateur Plex"
+            description="Vous êtes-vous déjà demandé combien ça coûte, vraiment, un immeuble à revenus? 
           Et quel serait le potentiel projeté de revenus et de profits? 
           C'est ce que vous pouvez calculer et estimer facilement à l'aide de ce fichier."
-          year="2024"
-          tag="Immobilier"
-        />
-        <Thumbnail
-          link="/outils/acheter-vs-louer"
-          title="Acheter vs. Louer"
-          imageSrc="/acheter-vs-louer.png"
-          alt="Calculateur Acheter vs. Louer"
-          description="Vous êtes-vous déjà demandé combien ça coûte, vraiment, un immeuble à revenus? 
-          Et quel serait le potentiel projeté de revenus et de profits? 
-          C'est ce que vous pouvez calculer et estimer facilement à l'aide de ce fichier."
-          year="2024"
-          tag="Immobilier"
-        />
-        <Thumbnail
-          link="/outils/calculatrice-hypothecaire"
-          title="Calculatrice Hypothécaire"
-          imageSrc="/calculatrice-hypothecaire.png"
-          alt="Calculatrice hypothécaire"
-          description="Vous êtes-vous déjà demandé combien ça coûte, vraiment, un immeuble à revenus? 
-          Et quel serait le potentiel projeté de revenus et de profits? 
-          C'est ce que vous pouvez calculer et estimer facilement à l'aide de ce fichier."
-          year="2023"
-          tag="Immobilier"
-        />
+            year="2024"
+            tag="Immobilier"
+          />
+        </div>
+        <div className="flex flex-col gap-3">
+          <Thumbnail
+            link="/outils/acheter-vs-louer"
+            title="Acheter vs. Louer"
+            imageSrc="/acheter-vs-louer.png"
+            alt="Calculateur Acheter vs. Louer"
+            description="La question à... plusieurs centaines de milliers de dollars. 
+          Qu'est-ce qui est plus rentable, financièrement parlant – acheter une propriété pour l'habiter, ou en louer une?
+          C'est une question que beaucoup se posent, et à quoi ce fichier Excel peut vous aider à répondre. "
+            year="2024"
+            tag="Immobilier"
+          />
+        </div>
+        <div className="flex flex-col gap-3">
+          <Thumbnail
+            link="/outils/calculatrice-hypothecaire"
+            title="Calculatrice Hypothécaire"
+            imageSrc="/calculatrice-hypothecaire.png"
+            alt="Calculatrice hypothécaire"
+            description="Une calculatrice simple et agréable à utiliser qui t'aide à comprendre 
+          à quoi ressemble ton calendrier d'amortissement hypothécaire. 
+          Tu verras aussi combien, au total, tu auras payé d'intérêts à la fin de ton prêt."
+            year="2023"
+            tag="Immobilier"
+          />
+        </div>
       </div>
     </div>
   );
