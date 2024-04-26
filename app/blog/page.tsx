@@ -6,7 +6,9 @@ export default async function Page() {
 
   return (
     <div className="slide-up">
-      <h1 className="text-4xl font-semibold mb-4 tracking-tighter">Blog</h1>
+      <h1 className="text-3xl md:text-4xl tracking-tighter md:leading-snug font-semibold mb-4">
+        Blog
+      </h1>
       <p className="mb-8">
         Si, comme moi, tu penses souvent à tes finances personnelles et que tu
         as envie de prendre tes finances en main, tu es à la bonne place. Ici,

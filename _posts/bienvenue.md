@@ -1,5 +1,5 @@
 ---
-title: Bienvenue au blogue
+title: Bienvenue au blog
 date: 2024-04-24
 ---
 
