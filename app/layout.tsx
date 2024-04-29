@@ -12,7 +12,8 @@ const font = Schibsted_Grotesk({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://mesfinances.co"),
   title: {
-    default: "Mes Finances",
+    default:
+      "Mes Finances - Outils, calculatrices et ressources pour finances personnelles",
     template: "%s | Mes Finances",
   },
   description:
