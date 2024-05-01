@@ -38,23 +38,33 @@ export default function CalculateurPlex() {
           Je ne parle pas seulement du coût d'acquisition de l'immeuble, bien
           entendu. Un nombre important de dépenses fixes et courantes
           s'accumulent. En voici une liste non-exhaustive:
-          <ul>
-            <li>Impôts fonciers</li>
-            <li>Entretien et réparations</li>
-            <li>Assurances</li>
-            <li>Électricité</li>
-          </ul>
         </p>
+        <ul>
+          <li>Impôts fonciers</li>
+          <li>Entretien et réparations</li>
+          <li>Assurances</li>
+          <li>Électricité</li>
+        </ul>
         <p>
           De plus, un nombre important de facteurs additionnels doivent être
           pris en compte. Par exemple, allez vous habiter le bâtiment,
           c'est-à-dire occuper un des logements ? Si oui, quelle proportion de
           l'immeuble occupe le logement que vous allez habiter ? C'est important
-          à savoir parce que c'est ce qui va déterminer le pourcentage des coûts
-          que vous allez pouvoir déduire de vos impôts. Et parlant d'impôts, à
-          combien s'élève votre salaire annuel ? Cela déterminera le montant
-          total d'impôts additionnels à payer.
+          à savoir parce que c'est ce qui va déterminer le pourcentage de vos
+          dépenses que vous allez pouvoir déduire de vos impôts. Et parlant
+          d'impôts, à combien s'élève votre salaire annuel ? Cela déterminera le
+          montant total d'impôts additionnels à payer.
         </p>
+        <p>
+          Au final, l'objectif de ce document est de vous donner une clarté
+          quant à vos revenus, vos coûts totaux après impôt, et ultimement votre
+          profit/perte totale sur un horizon de plusieurs années.
+        </p>
+        <p>
+          Pour accéder au document, c'est par ici 👇
+        </p>
+        <br></br>
+        <a href="/">Caculateur Plex - Fichier Google Sheets</a>
       </div>
     </div>
   );
