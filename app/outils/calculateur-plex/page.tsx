@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CalculateurPlex() {
   return (
@@ -60,11 +62,22 @@ export default function CalculateurPlex() {
           quant à vos revenus, vos coûts totaux après impôt, et ultimement votre
           profit/perte totale sur un horizon de plusieurs années.
         </p>
-        <p>
-          Pour accéder au document, c'est par ici 👇
-        </p>
+        <p>Pour accéder au document, c'est par ici 👇</p>
         <br></br>
-        <a href="/">Caculateur Plex - Fichier Google Sheets</a>
+        <Link
+          href="https://docs.google.com/spreadsheets/d/1_pz4i1Zzx85yKHQ0TkpmrpalgoZl--cJWDpQ3OwTxXg/edit#gid=124324891"
+          target="_blank"
+        >
+          <Button>Caculateur Plex - Fichier Google Sheets</Button>
+        </Link>
+        <br></br>
+        <br></br>
+        <p>
+          J'espère sincèrement que ce document vous aide à prendre cette
+          importante décision financière de façon plus éclairée. Si vous avez
+          bénéficié de de document, vous pouvez me remercier en{" "}
+          <a href="https://buymeacoffee.com/mesfinances">m'achetant un café</a>!
+        </p>
       </div>
     </div>
   );
