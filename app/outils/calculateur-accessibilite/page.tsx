@@ -51,7 +51,7 @@ export default function Component() {
     <>
       <div className="w-full max-w-xl mx-auto text-center mb-12 hidden">
         <h1 className="text-2xl md:text-3xl tracking-tighter md:leading-snug font-semibold mb-2">
-          Calculateur d'accessibilté hypothécaire 🏡
+          Calculateur d'accessibilité hypothécaire 🏡
         </h1>
         <p className="prose prose-neutral dark:prose-invert">
           Calculez le prix d'une maison que vous pouvez vous permettre en
