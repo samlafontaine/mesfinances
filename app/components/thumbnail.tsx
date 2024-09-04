@@ -54,14 +54,14 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
                   className="group-hover:rotate-45 transition duration-150 ease-in-out"
                 />
               </div>
-              <div className="flex flex-row gap-1">
-                <p className="px-1 py-0.5 bg-zinc-900 text-zinc-200 uppercase rounded text-xs dark:bg-zinc-200 dark:text-zinc-900">
-                  {year}
-                </p>
+              <div className="flex flex-row justify-between">
                 <p
                   className={`px-1 py-0.5 rounded text-xs uppercase text-zinc-200 dark:text-zinc-900 ${tagBgColor}`}
                 >
                   {tag}
+                </p>
+                <p className="px-1 py-0.5 text-zinc-500 uppercase rounded text-xs border border-zinc-200">
+                  {year}
                 </p>
               </div>
             </div>

@@ -15,6 +15,17 @@ export default function Page() {
       <div className="grid md:grid-cols-3 gap-3">
         <div className="flex flex-col gap-3">
           <Thumbnail
+            link="/outils/calculateur-accessibilite"
+            title="Accessibilité immobilière"
+            imageSrc="/calculatrice-hypothecaire.png"
+            alt="Calculateur Accessibilité"
+            description="Ce calculateur t'aide à calculer le prix maximal d'une 
+            propriété que tu peux te permettre en fonction de la règle selon 
+            laquelle le prix d'une propriété ne doit pas dépasser 28% des revenus annuels bruts."
+            year="2024"
+            tag="Immobilier"
+          />
+          <Thumbnail
             link="/outils/calculateur-plex"
             title="Calculateur Plex"
             imageSrc="/calculateur-plex.png"
@@ -26,6 +37,7 @@ export default function Page() {
             tag="Immobilier"
           />
         </div>
+
         <div className="flex flex-col gap-3">
           <Thumbnail
             link="/outils/acheter-vs-louer"
@@ -39,6 +51,7 @@ export default function Page() {
             tag="Immobilier"
           />
         </div>
+
         <div className="flex flex-col gap-3">
           <Thumbnail
             link="/outils/calculatrice-hypothecaire"
