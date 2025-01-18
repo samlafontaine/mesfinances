@@ -24,6 +24,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
   const tagBgColorMap: { [key: string]: string } = {
     Immobilier: "bg-green-700",
     Autre: "bg-red-500",
+    "Finances personnelles": "bg-blue-500",
     // Add more mappings here as needed
   };
 
@@ -55,11 +56,11 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
                 />
               </div>
               <div className="flex flex-row justify-between">
-                <p
-                  className={`px-1 py-0.5 rounded text-xs uppercase text-zinc-200 dark:text-zinc-900 ${tagBgColor}`}
+                <div
+                  className={`text-center px-2 py-1 rounded text-xs uppercase text-zinc-200 dark:text-zinc-900 ${tagBgColor}`}
                 >
                   {tag}
-                </p>
+                </div>
                 <p className="px-1 py-0.5 text-zinc-500 uppercase rounded text-xs border border-zinc-200">
                   {year}
                 </p>
