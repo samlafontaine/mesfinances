@@ -17,7 +17,7 @@ export default function Page() {
           <Thumbnail
             link="https://recurwise.com"
             title="Recurwise"
-            imageSrc="/recurwise.png"
+            imageSrc="/recurwise-logo.png"
             alt="Recurwise"
             description="Recurwise est une application qui te permet de gérer et de suivre tes abonnements récurrents. 
             Ajoute tes abonnements, classe les par catégorie, vois tes dépenses mensuelles et annuelles et 
