@@ -96,12 +96,14 @@ const MortgageCalculator: React.FC = () => {
 
   return (
     <div>
-      <h1 className="text-2xl md:text-3xl tracking-tighter md:leading-snug font-semibold mb-2">
-        Calculatrice hypothécaire 🏡
-      </h1>
-      <p className="prose prose-neutral mb-8 dark:prose-invert">
-        Voyez votre calendrier d'amortissement hypothécaire.
-      </p>
+      <div className="w-full flex flex-col items-center">
+        <h1 className="text-2xl md:text-3xl tracking-tighter md:leading-snug font-semibold mb-2">
+          Calculatrice hypothécaire 🏡
+        </h1>
+        <p className="prose prose-neutral mb-8 dark:prose-invert text-center">
+          Voyez votre calendrier d'amortissement hypothécaire.
+        </p>
+      </div>
       <div className="w-full">
         <div className="grid grid-cols-1 gap-2 mb-8 md:grid-cols-3 md:gap-6">
           <Input
