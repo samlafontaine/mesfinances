@@ -1,6 +1,6 @@
 import Thumbnail from "./components/thumbnail";
 
-export default function Page() {
+export default function Home() {
   return (
     <div className="slide-up text-center">
       <div className="space-y-3 md:space-y-0.5 mb-12 md:mb-20">
