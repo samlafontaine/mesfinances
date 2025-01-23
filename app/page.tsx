@@ -22,7 +22,7 @@ export default function Home() {
             description="Recurwise est une application qui te permet de gérer et de suivre tes abonnements récurrents. 
             Ajoute tes abonnements, classe les par catégorie, vois tes dépenses mensuelles et annuelles et 
             reçois des notifications avant que tes abonnements se renouvellent."
-            year="2024"
+            year="2025"
             tag="Finances personnelles"
           />
           <Thumbnail
@@ -72,7 +72,7 @@ export default function Home() {
             description="Une calculatrice simple et agréable à utiliser qui t'aide à comprendre 
           à quoi ressemble ton calendrier d'amortissement hypothécaire. 
           Tu verras aussi combien, au total, tu auras payé d'intérêts à la fin de ton prêt."
-            year="2023"
+            year="2024"
             tag="Immobilier"
           />
         </div>

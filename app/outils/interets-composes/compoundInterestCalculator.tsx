@@ -54,18 +54,22 @@ export default function CompoundInterestCalculator() {
 
   return (
     <div className="container mx-auto p-4 space-y-6">
-      <h1 className="text-2xl font-bold">
-        Calculatrice d&apos;intérêts composés
-      </h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Card className="p-6 space-y-4">
+      <div className="w-full flex flex-col items-center mb-12">
+        <h1 className="text-2xl md:text-3xl tracking-tighter md:leading-snug font-semibold mb-2 text-center">
+          Calculatrice d&apos;intérêts composés 📈
+        </h1>
+        <p className="prose prose-neutral dark:prose-invert text-center">
+          Calculez la valeur future de vos investissements avec intérêts.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="initial">Montant de départ ($)</Label>
             <Input
               id="initial"
               type="number"
-              value={initialAmount}
+              value={initialAmount || ""}
               onChange={(e) => setInitialAmount(Number(e.target.value))}
             />
           </div>
@@ -75,7 +79,7 @@ export default function CompoundInterestCalculator() {
             <Input
               id="contribution"
               type="number"
-              value={contribution}
+              value={contribution || ""}
               onChange={(e) => setContribution(Number(e.target.value))}
             />
           </div>
@@ -83,7 +87,7 @@ export default function CompoundInterestCalculator() {
           <div className="space-y-2">
             <Label htmlFor="frequency">Fréquence de contribution</Label>
             <Select
-              value={contributionFrequency}
+              value={contributionFrequency || ""}
               onValueChange={(value: "mensuel" | "annuel") =>
                 setContributionFrequency(value)
               }
@@ -104,7 +108,8 @@ export default function CompoundInterestCalculator() {
               id="rate"
               type="number"
               step="0.1"
-              value={interestRate}
+              value={interestRate || ""}
+              placeholder="0"
               onChange={(e) => setInterestRate(Number(e.target.value))}
             />
           </div>
@@ -114,20 +119,21 @@ export default function CompoundInterestCalculator() {
             <Input
               id="years"
               type="number"
-              value={years}
+              value={years || ""}
+              placeholder="0"
               onChange={(e) => setYears(Number(e.target.value))}
             />
           </div>
-        </Card>
+        </div>
 
-        <Card className="p-6">
+        <Card className="p-6 md:col-span-2">
           <ResponsiveContainer width="100%" height={400}>
             <LineChart
               data={data}
               margin={{
                 top: 10,
                 right: 30,
-                left: 20,
+                left: 15,
                 bottom: 20,
               }}
             >
@@ -140,7 +146,10 @@ export default function CompoundInterestCalculator() {
                   offset: -20,
                 }}
               />
-              <YAxis tickFormatter={(value) => `$${value.toLocaleString()}`} />
+              <YAxis
+                tickFormatter={(value) => `$${value.toLocaleString()}`}
+                width={80}
+              />
               <Tooltip
                 formatter={(value: number) => [
                   `$${value.toLocaleString()}`,
