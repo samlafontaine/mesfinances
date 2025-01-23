@@ -51,14 +51,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={font.className} suppressHydrationWarning>
-      <body className="antialiased max-w-4xl mb-12 flex flex-col md:flex-row mx-4 md:mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
-          {children}
-          <Analytics />
-          <SpeedInsights />
-          <Footer />
-        </main>
+      <body className="antialiased">
+        <div className="max-w-4xl mb-12 flex flex-col md:flex-row mx-4 md:mt-8 lg:mx-auto">
+          <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+            <Navbar />
+            {children}
+            <Analytics />
+            <SpeedInsights />
+            <Footer />
+          </main>
+        </div>
       </body>
     </html>
   );
