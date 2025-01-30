@@ -47,7 +47,7 @@ export default function Home() {
             description="Ce calculateur t'aide à calculer le prix maximal d'une 
             propriété que tu peux te permettre en fonction de la règle selon 
             laquelle le prix d'une propriété ne doit pas dépasser 28% des revenus annuels bruts."
-            year="2024"
+            year="2025"
             tag="Immobilier"
           />
           <Thumbnail
@@ -64,6 +64,16 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-3">
+          <Thumbnail
+            link="/outils/interets-composes"
+            title="Intérêts composés"
+            imageSrc="/interets-composes.png"
+            alt="Intérêts composés"
+            description="Une calculatrice simple qui te permet de calculer et de visualiser
+            la valeur future d'un investissement en fonction de la fréquence des contributions et du taux d'intérêt."
+            year="2025"
+            tag="Finances personnelles"
+          />
           <Thumbnail
             link="/outils/calculatrice-hypothecaire"
             title="Calculatrice Hypothécaire"
