@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator";
 export function Footer() {
   return (
     <section>
-      <footer className="mt-20">
+      <footer className="mt-12">
         <div className="flex flex-row items-center justify-between">
           <div className="flex h-5 items-center space-x-2 text-sm">
             <p className="prose prose-neutral text-sm dark:text-white/80">

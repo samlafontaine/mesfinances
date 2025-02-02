@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllPosts } from "@/lib/api";
+import { Newsletter } from "../components/newsletter";
 
 export default async function Page() {
   const posts = await getAllPosts();
@@ -31,6 +32,7 @@ export default async function Page() {
           );
         })}
       </ul>
+      <Newsletter />
     </div>
   );
 }
