@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -13,6 +14,16 @@ export function Footer() {
             <p className="prose prose-neutral text-sm dark:text-white/80">
               Mes Finances. Tous droits réservés.
             </p>
+          </div>
+          <div>
+            <Link
+              href="https://buymeacoffee.com/mesfinances"
+              className="prose prose-neutral text-sm dark:text-white/80 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Soutiens le projet
+            </Link>
           </div>
         </div>
       </footer>

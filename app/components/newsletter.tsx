@@ -4,7 +4,7 @@ export function Newsletter() {
       <div className="flex flex-col items-center space-y-4">
         <h3 className="text-lg font-medium">Abonne-toi à l'infolettre</h3>
         <p className="text-sm text-neutral-600 dark:text-neutral-400 text-center">
-          Reçois mes articles et mes outils directement dans tes courriels.
+          Reçois mes nouveaux outils et articles directement dans tes courriels.
         </p>
         <div
           dangerouslySetInnerHTML={{

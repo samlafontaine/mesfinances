@@ -4,6 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = {
+  "/": {
+    name: "Outils",
+  },
   "/a-propos": {
     name: "À Propos",
   },
