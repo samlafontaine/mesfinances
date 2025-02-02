@@ -2,6 +2,13 @@
 import { useState } from "react";
 import Thumbnail from "./components/thumbnail";
 import { Newsletter } from "./components/newsletter";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function Home() {
   const [selectedTag, setSelectedTag] = useState<string>("all");
@@ -89,17 +96,18 @@ export default function Home() {
       </div>
 
       <div className="mb-8">
-        <select
-          value={selectedTag}
-          onChange={(e) => setSelectedTag(e.target.value)}
-          className="px-4 py-2 rounded-md border border-zinc-200 bg-white dark:bg-zinc-800 dark:border-zinc-700"
-        >
-          {tags.map((tag) => (
-            <option key={tag} value={tag}>
-              {tag === "all" ? "Tous les outils" : tag}
-            </option>
-          ))}
-        </select>
+        <Select value={selectedTag} onValueChange={setSelectedTag}>
+          <SelectTrigger className="w-[180px]">
+            <SelectValue placeholder="Sélectionner une catégorie" />
+          </SelectTrigger>
+          <SelectContent>
+            {tags.map((tag) => (
+              <SelectItem key={tag} value={tag}>
+                {tag === "all" ? "Tous les outils" : tag}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">

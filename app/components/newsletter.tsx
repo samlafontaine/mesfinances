@@ -1,6 +1,6 @@
 export function Newsletter() {
   return (
-    <div className="my-12 py-20 bg-gray-100 rounded-md">
+    <div className="my-12 py-20 bg-gray-100 rounded-md px-4">
       <div className="flex flex-col items-center space-y-4">
         <h3 className="text-lg font-medium">Abonne-toi à l'infolettre</h3>
         <p className="text-sm text-neutral-600 dark:text-neutral-400 text-center">

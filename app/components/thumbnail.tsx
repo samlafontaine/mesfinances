@@ -37,7 +37,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
           <div className="min-h-40 rounded flex items-center justify-center">
             <Image
               src={imageSrc}
-              width={300}
+              width={400}
               height={100}
               alt={alt}
               className="rounded"
