@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import { HandHeart } from "lucide-react";
 
 export function Footer() {
   return (
@@ -22,7 +23,8 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Soutiens le projet
+              Soutiens le projet{" "}
+              <HandHeart strokeWidth={1.5} className="inline h-4 w-4" />
             </Link>
           </div>
         </div>

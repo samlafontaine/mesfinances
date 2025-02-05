@@ -27,6 +27,16 @@ export default function Home() {
       tag: "Finances personnelles",
     },
     {
+      link: "/outils/frais-courtage",
+      title: "Frais de courtage",
+      imageSrc: "/frais-courtage.png",
+      alt: "Frais de courtage",
+      description:
+        "Vois divers scénarios de frais de courtage en fonction du prix de vente estimé et du taux de courtage demandé. Tu y verras aussi le pourcentage du gain en capital que représente le montant des frais de courtage.",
+      year: "2025",
+      tag: "Immobilier",
+    },
+    {
       link: "/outils/interets-composes",
       title: "Intérêts composés",
       imageSrc: "/interets-composes.png",
