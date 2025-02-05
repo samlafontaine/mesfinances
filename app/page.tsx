@@ -25,6 +25,7 @@ export default function Home() {
         "Recurwise est une application qui te permet de suivre tes abonnements récurrents. Ajoute tes abonnements, classe les par catégorie, vois ton total et reçois des notifications avant que tes abonnements se renouvellent.",
       year: "2025",
       tag: "Finances personnelles",
+      popular: true,
     },
     {
       link: "/outils/frais-courtage",
