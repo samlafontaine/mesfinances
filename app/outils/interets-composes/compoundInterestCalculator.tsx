@@ -147,12 +147,12 @@ export default function CompoundInterestCalculator() {
                 }}
               />
               <YAxis
-                tickFormatter={(value) => `$${value.toLocaleString()}`}
+                tickFormatter={(value) => `${value.toLocaleString("fr-CA")} $`}
                 width={80}
               />
               <Tooltip
                 formatter={(value: number) => [
-                  `$${value.toLocaleString()}`,
+                  `${value.toLocaleString("fr-CA")} $`,
                   "Montant",
                 ]}
                 labelFormatter={(label) => `Année ${label}`}
@@ -167,6 +167,23 @@ export default function CompoundInterestCalculator() {
             </LineChart>
           </ResponsiveContainer>
         </Card>
+      </div>
+      <div className="mt-4 text-center text-sm text-muted-foreground">
+        Avec un montant de départ de{" "}
+        <span className="font-semibold">
+          {initialAmount.toLocaleString("fr-CA")} $
+        </span>{" "}
+        et des contributions {contributionFrequency}les de{" "}
+        <span className="font-semibold">
+          {contribution.toLocaleString("fr-CA")} $
+        </span>
+        , à un taux d&apos;intérêt de{" "}
+        <span className="font-semibold">{interestRate}%</span> par année, vous
+        aurez{" "}
+        <span className="font-semibold">
+          {data[data.length - 1].balance.toLocaleString("fr-CA")} $
+        </span>{" "}
+        après <span className="font-semibold">{years}</span> ans.
       </div>
     </div>
   );
