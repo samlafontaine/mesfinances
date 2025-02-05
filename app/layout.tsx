@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     siteName: "Mes Finances",
     locale: "fr_CA",
     type: "website",
+    images: [
+      {
+        url: "/opengraph.png",
+        width: 1200,
+        height: 630,
+        alt: "Mes Finances - Outils pour finances personnelles",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -41,6 +49,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Mes Finances",
     card: "summary_large_image",
+    images: ["/opengraph.png"],
   },
 };
 
