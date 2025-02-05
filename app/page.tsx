@@ -18,7 +18,7 @@ export default function Home() {
   const thumbnailData = [
     {
       link: "https://recurwise.com",
-      title: "Recurwise",
+      title: "Gestion des abonnements",
       imageSrc: "/recurwise-logo.png",
       alt: "Recurwise",
       description:
