@@ -69,9 +69,6 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
                   >
                     {tag}
                   </div>
-                  <p className="px-1 py-0.5 text-zinc-500 uppercase rounded text-xs border border-zinc-200">
-                    {year}
-                  </p>
                 </div>
               </div>
               <p className="text-left text-sm mb-2">{description}</p>
