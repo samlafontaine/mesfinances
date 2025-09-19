@@ -35,7 +35,7 @@ export default function RQAPCalculator() {
     // Maximum insurable earnings for 2025
     const maxInsurableEarnings = 98000;
     const salaireInsurable = Math.min(salaire, maxInsurableEarnings);
-    const salaireHebdomadaire = salaireInsurable / 52;
+    const salaireHebdomadaire = (salaireInsurable / 365) * 7;
 
     if (type === "maternite") {
       if (regime === "base") {
@@ -80,7 +80,7 @@ export default function RQAPCalculator() {
     // Maximum insurable earnings for 2025
     const maxInsurableEarnings = 98000;
     const salaireInsurable = Math.min(salaire, maxInsurableEarnings);
-    const salaireHebdomadaire = salaireInsurable / 52;
+    const salaireHebdomadaire = (salaireInsurable / 365) * 7;
 
     if (regime === "base") {
       return {
