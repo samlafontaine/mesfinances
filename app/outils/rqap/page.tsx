@@ -199,7 +199,7 @@ export default function RQAPCalculator() {
               <TableHead className="text-right">Semaines</TableHead>
               <TableHead className="text-right">Pourcentage</TableHead>
               <TableHead className="text-right">Montant/semaine</TableHead>
-              <TableHead className="text-right">Montant total</TableHead>
+              <TableHead className="text-right">Montant brut total</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -241,7 +241,7 @@ export default function RQAPCalculator() {
               <TableHead className="text-right">Semaines</TableHead>
               <TableHead className="text-right">Pourcentage</TableHead>
               <TableHead className="text-right">Montant/semaine</TableHead>
-              <TableHead className="text-right">Montant total</TableHead>
+              <TableHead className="text-right">Montant brut total</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>

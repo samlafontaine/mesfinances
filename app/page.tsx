@@ -28,6 +28,16 @@ export default function Home() {
       popular: true,
     },
     {
+      link: "/outils/rqap",
+      title: "Calculateur RQAP",
+      imageSrc: "/rqap.png",
+      alt: "Calculateur RQAP",
+      description:
+        "Calculateur RQAP qui te permet de calculer tes prestations RQAP selon ton salaire et le régime choisi.",
+      year: "2025",
+      tag: "Finances personnelles",
+    },
+    {
       link: "/outils/frais-courtage",
       title: "Frais de courtage",
       imageSrc: "/frais-courtage.png",
