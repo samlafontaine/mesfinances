@@ -30,7 +30,7 @@ export default function Home() {
     {
       link: "/outils/rqap",
       title: "Calculateur RQAP",
-      imageSrc: "/rqap.png",
+      imageSrc: "/RQAP.png",
       alt: "Calculateur RQAP",
       description:
         "Calculateur RQAP qui te permet de calculer tes prestations RQAP selon ton salaire et le régime choisi.",
