@@ -33,7 +33,7 @@ export default function RQAPCalculator() {
     type: "maternite" | "paternite",
   ) => {
     // Maximum insurable earnings for 2025
-    const maxInsurableEarnings = 98000;
+    const maxInsurableEarnings = 103000;
     const salaireInsurable = Math.min(salaire, maxInsurableEarnings);
     const salaireHebdomadaire = (salaireInsurable / 365) * 7;
 
@@ -78,7 +78,7 @@ export default function RQAPCalculator() {
     regime: "base" | "particulier",
   ) => {
     // Maximum insurable earnings for 2025
-    const maxInsurableEarnings = 98000;
+    const maxInsurableEarnings = 103000;
     const salaireInsurable = Math.min(salaire, maxInsurableEarnings);
     const salaireHebdomadaire = (salaireInsurable / 365) * 7;
 
@@ -382,8 +382,8 @@ export default function RQAPCalculator() {
         <p className="text-sm text-muted-foreground">
           Ce calculateur fournit une estimation basée sur les tableaux officiels
           du RQAP. <strong>Note importante :</strong> Le salaire maximum
-          assurable pour 2025 est de 98 000 $. Si votre salaire dépasse ce
-          montant, les prestations sont calculées sur 98 000 $ seulement. Les
+          assurable pour 2026 est de 103 000 $. Si votre salaire dépasse ce
+          montant, les prestations sont calculées sur 103 000 $ seulement. Les
           montants réels peuvent varier selon votre situation spécifique.
           Consultez le site officiel du{" "}
           <a
