@@ -61,8 +61,8 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
           </div>
         )}
         <div className="flex flex-col p-0.5 rounded-md bg-zinc-50 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 group">
-          <div className="flex flex-col p-1 rounded-md bg-zinc-100 gap-6 dark:bg-zinc-800">
-            <div className="min-h-40 rounded flex items-center justify-center">
+          <div className="flex flex-col p-3 md:p-1 rounded-md bg-zinc-100 gap-0 md:gap-6 dark:bg-zinc-800 pb-3 md:pb-1">
+            <div className="min-h-40 rounded hidden md:flex items-center justify-center">
               <Image
                 src={imageSrc}
                 width={400}
@@ -71,8 +71,8 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
                 className="rounded"
               />
             </div>
-            <div className="flex flex-col gap-3 px-2">
-              <div className="flex flex-col justify-between items-left gap-3">
+            <div className="flex flex-col gap-3 px-3 md:px-2">
+              <div className="flex flex-col justify-between items-left gap-1 md:gap-3">
                 <div className="flex flex-row items-center gap-1">
                   <h2 className="text-lg text-left tracking-tighter group-hover:underline underline-offset-3 transition duration-300 ease-in-out">
                     {title}
@@ -82,15 +82,21 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
                     size={18}
                     className="group-hover:rotate-45 transition duration-150 ease-in-out"
                   />
+                  {views !== undefined && (
+                    <div className="flex md:hidden items-center gap-1 text-xs text-muted-foreground ml-auto">
+                      <Eye size={14} strokeWidth={1.5} />
+                      <span>{views.toLocaleString("fr-CA")}</span>
+                    </div>
+                  )}
                 </div>
                 <div className="flex flex-row justify-between items-center">
                   <div
-                    className={`text-center px-2 py-1 rounded text-xs uppercase text-zinc-200 dark:text-zinc-900 ${tagBgColor}`}
+                    className={`hidden md:block text-center px-2 py-1 rounded text-xs uppercase text-zinc-200 dark:text-zinc-900 ${tagBgColor}`}
                   >
                     {tag}
                   </div>
                   {views !== undefined && (
-                    <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                    <div className="hidden md:flex items-center gap-1 text-xs text-muted-foreground">
                       <Eye size={14} strokeWidth={1.5} />
                       <span>{views.toLocaleString("fr-CA")}</span>
                     </div>

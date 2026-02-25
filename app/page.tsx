@@ -2,16 +2,9 @@
 import { useEffect, useState } from "react";
 import Thumbnail from "./components/thumbnail";
 import { Newsletter } from "./components/newsletter";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 export default function Home() {
-  const [selectedTag, setSelectedTag] = useState<string>("all");
+  const [selectedTags, setSelectedTags] = useState<Set<string>>(new Set());
   const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
 
   useEffect(() => {
@@ -21,7 +14,19 @@ export default function Home() {
       .catch(() => {});
   }, []);
 
-  const tags = ["all", "Immobilier", "Finances personnelles"];
+  const tags = ["Finances personnelles", "Immobilier"];
+
+  const toggleTag = (tag: string) => {
+    setSelectedTags((prev) => {
+      const next = new Set(prev);
+      if (next.has(tag)) {
+        next.delete(tag);
+      } else {
+        next.add(tag);
+      }
+      return next;
+    });
+  };
 
   const thumbnailData = [
     {
@@ -138,9 +143,9 @@ export default function Home() {
   ];
 
   const filteredThumbnails =
-    selectedTag === "all"
+    selectedTags.size === 0
       ? thumbnailData
-      : thumbnailData.filter((item) => item.tag === selectedTag);
+      : thumbnailData.filter((item) => selectedTags.has(item.tag));
 
   return (
     <div className="slide-up text-center">
@@ -154,19 +159,23 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mb-8">
-        <Select value={selectedTag} onValueChange={setSelectedTag}>
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="Sélectionner une catégorie" />
-          </SelectTrigger>
-          <SelectContent>
-            {tags.map((tag) => (
-              <SelectItem key={tag} value={tag}>
-                {tag === "all" ? "Tous les outils" : tag}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+      <div className="flex flex-wrap justify-center gap-2 mb-8">
+        {tags.map((tag) => {
+          const active = selectedTags.has(tag);
+          return (
+            <button
+              key={tag}
+              onClick={() => toggleTag(tag)}
+              className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-all duration-150 ${
+                active
+                  ? "bg-zinc-900 text-white border-zinc-900 dark:bg-white dark:text-zinc-900 dark:border-white"
+                  : "bg-transparent text-zinc-600 border-zinc-300 hover:border-zinc-500 dark:text-zinc-400 dark:border-zinc-700 dark:hover:border-zinc-500"
+              }`}
+            >
+              {tag}
+            </button>
+          );
+        })}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
