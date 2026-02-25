@@ -45,6 +45,16 @@ export default function Home() {
       tag: "Finances personnelles",
     },
     {
+      link: "/outils/celi-vs-reer",
+      title: "CELI vs REER",
+      imageSrc: "/celi-vs-reer.png",
+      alt: "CELI vs REER",
+      description:
+        "Tu ne sais pas si tu devrais cotiser à ton CELI ou ton REER? Réponds à quelques questions et obtiens une recommandation personnalisée selon ta situation.",
+      year: "2025",
+      tag: "Finances personnelles",
+    },
+    {
       link: "https://recurwise.com",
       title: "Gestion des abonnements",
       imageSrc: "/recurwise-logo.png",
