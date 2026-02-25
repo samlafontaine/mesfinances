@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Thumbnail from "./components/thumbnail";
 import { Newsletter } from "./components/newsletter";
 import {
@@ -12,10 +12,38 @@ import {
 
 export default function Home() {
   const [selectedTag, setSelectedTag] = useState<string>("all");
+  const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    fetch("/api/views")
+      .then((res) => res.json())
+      .then((data) => setViewCounts(data))
+      .catch(() => {});
+  }, []);
 
   const tags = ["all", "Immobilier", "Finances personnelles"];
 
   const thumbnailData = [
+    {
+      link: "/outils/calculateur-impot",
+      title: "Calculateur d'impôt",
+      imageSrc: "/calculateur-impot.png",
+      alt: "Calculateur d'impôt",
+      description:
+        "Estime tes impôts provinciaux (Québec) et fédéraux pour 2025. Incluant les déductions REER, les cotisations salariales (RRQ, AE, RQAP), le taux effectif et le taux marginal.",
+      year: "2025",
+      tag: "Finances personnelles",
+    },
+    {
+      link: "/outils/fonds-urgence",
+      title: "Fonds d'urgence",
+      imageSrc: "/fonds-urgence.png",
+      alt: "Calculateur de fonds d'urgence",
+      description:
+        "Calcule le montant idéal de ton fonds d'urgence selon tes dépenses mensuelles et ta situation personnelle. Obtiens une recommandation personnalisée de 3 à 12 mois.",
+      year: "2025",
+      tag: "Finances personnelles",
+    },
     {
       link: "https://recurwise.com",
       title: "Gestion des abonnements",
@@ -133,7 +161,7 @@ export default function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {filteredThumbnails.map((item, index) => (
-          <Thumbnail key={index} {...item} />
+          <Thumbnail key={index} {...item} views={viewCounts[item.link] || 0} />
         ))}
       </div>
       <Newsletter />

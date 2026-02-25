@@ -1,6 +1,7 @@
-import Link from "next/link";
+"use client";
 import Image from "next/image";
-import { ArrowUpRight, Sparkles } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { ArrowUpRight, Eye, Sparkles } from "lucide-react";
 
 interface ThumbnailProps {
   link: string;
@@ -11,6 +12,7 @@ interface ThumbnailProps {
   year: string;
   tag: string;
   popular?: boolean;
+  views?: number;
 }
 
 const Thumbnail: React.FC<ThumbnailProps> = ({
@@ -22,7 +24,10 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
   year,
   tag,
   popular,
+  views,
 }) => {
+  const router = useRouter();
+
   const tagBgColorMap: { [key: string]: string } = {
     Immobilier: "bg-green-700",
     Autre: "bg-red-500",
@@ -32,9 +37,24 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
 
   const tagBgColor = tagBgColorMap[tag] || "bg-zinc-900";
 
+  const handleClick = () => {
+    // Fire and forget — don't block navigation
+    fetch("/api/views", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ slug: link }),
+    }).catch(() => {});
+
+    if (link.startsWith("http")) {
+      window.open(link, "_blank", "noopener,noreferrer");
+    } else {
+      router.push(link);
+    }
+  };
+
   return (
     <div className="relative">
-      <Link href={link} className="block">
+      <div onClick={handleClick} className="block cursor-pointer">
         {popular && (
           <div className="absolute -top-2 -right-1 bg-yellow-500 text-yellow-50 px-2 py-1 rounded-full text-xs font-medium z-10 shadow-sm">
             <Sparkles strokeWidth={1.5} className="inline h-4 w-4" /> populaire
@@ -63,19 +83,25 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
                     className="group-hover:rotate-45 transition duration-150 ease-in-out"
                   />
                 </div>
-                <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between items-center">
                   <div
                     className={`text-center px-2 py-1 rounded text-xs uppercase text-zinc-200 dark:text-zinc-900 ${tagBgColor}`}
                   >
                     {tag}
                   </div>
+                  {views !== undefined && (
+                    <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                      <Eye size={14} strokeWidth={1.5} />
+                      <span>{views.toLocaleString("fr-CA")}</span>
+                    </div>
+                  )}
                 </div>
               </div>
               <p className="text-left text-sm mb-2">{description}</p>
             </div>
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 };
