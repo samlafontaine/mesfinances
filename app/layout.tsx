@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Schibsted_Grotesk } from "next/font/google";
 import { Navbar } from "./components/nav";
 import { Footer } from "./components/footer";
+import { CommandMenu } from "./components/command-menu";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
@@ -64,6 +65,7 @@ export default function RootLayout({
         <div className="max-w-4xl mb-4 md:mb-12 flex flex-col md:flex-row mx-4 md:mt-8 lg:mx-auto">
           <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
             <Navbar />
+            <CommandMenu />
             {children}
             <Analytics />
             <SpeedInsights />

@@ -32,112 +32,78 @@ export default function Home() {
     {
       link: "/outils/calculateur-impot",
       title: "Calculateur d'impôt",
-      imageSrc: "/calculateur-impot.png",
-      alt: "Calculateur d'impôt",
-      description:
-        "Estime tes impôts provinciaux (Québec) et fédéraux pour 2025. Incluant les déductions REER, les cotisations salariales (RRQ, AE, RQAP), le taux effectif et le taux marginal.",
-      year: "2025",
+      icon: "🧮",
+      description: "Estime tes impôts provinciaux et fédéraux pour 2025.",
       tag: "Finances personnelles",
     },
     {
       link: "/outils/fonds-urgence",
       title: "Fonds d'urgence",
-      imageSrc: "/fonds-urgence.png",
-      alt: "Calculateur de fonds d'urgence",
-      description:
-        "Calcule le montant idéal de ton fonds d'urgence selon tes dépenses mensuelles et ta situation personnelle. Obtiens une recommandation personnalisée de 3 à 12 mois.",
-      year: "2025",
+      icon: "🛡️",
+      description: "Calcule le montant idéal de ton fonds d'urgence.",
       tag: "Finances personnelles",
     },
     {
       link: "/outils/celi-vs-reer",
       title: "CELI vs REER",
-      imageSrc: "/celi-vs-reer.png",
-      alt: "CELI vs REER",
-      description:
-        "Tu ne sais pas si tu devrais cotiser à ton CELI ou ton REER? Réponds à quelques questions et obtiens une recommandation personnalisée selon ta situation.",
-      year: "2025",
+      icon: "⚖️",
+      description: "Découvre si tu devrais cotiser à ton CELI ou ton REER.",
       tag: "Finances personnelles",
     },
     {
       link: "https://recurwise.com",
       title: "Gestion des abonnements",
-      imageSrc: "/recurwise-logo.png",
-      alt: "Recurwise",
-      description:
-        "Recurwise est une application qui te permet de suivre tes abonnements récurrents. Ajoute tes abonnements, classe les par catégorie, vois ton total et reçois des notifications avant que tes abonnements se renouvellent.",
-      year: "2025",
+      icon: "🔄",
+      description: "Suis et gère tes abonnements récurrents.",
       tag: "Finances personnelles",
-      popular: true,
     },
     {
       link: "/outils/rqap",
       title: "Calculateur RQAP",
-      imageSrc: "/RQAP.png",
-      alt: "Calculateur RQAP",
-      description:
-        "Calculateur RQAP qui te permet de calculer tes prestations RQAP selon ton salaire et le régime choisi.",
-      year: "2025",
+      icon: "👶",
+      description: "Calcule tes prestations RQAP selon ton salaire.",
       tag: "Finances personnelles",
     },
     {
       link: "/outils/frais-courtage",
       title: "Frais de courtage",
-      imageSrc: "/frais-courtage.png",
-      alt: "Frais de courtage",
-      description:
-        "Vois divers scénarios de frais de courtage en fonction du prix de vente estimé et du taux de courtage demandé. Tu y verras aussi le pourcentage du gain en capital que représente le montant des frais de courtage.",
-      year: "2025",
+      icon: "💼",
+      description: "Estime les frais de courtage selon le prix de vente.",
       tag: "Immobilier",
     },
     {
       link: "/outils/interets-composes",
       title: "Intérêts composés",
-      imageSrc: "/interets-composes.png",
-      alt: "Intérêts composés",
-      description:
-        "Une calculatrice simple qui te permet de calculer et de visualiser la valeur future d'un investissement en fonction de la fréquence des contributions, du montant de celles-ci et du taux d'intérêt annuel anticipé.",
-      year: "2025",
+      icon: "📈",
+      description: "Visualise la croissance de tes investissements.",
       tag: "Finances personnelles",
     },
     {
       link: "/outils/calculateur-accessibilite",
       title: "Accessibilité immobilière",
-      imageSrc: "/accessibilite.png",
-      alt: "Calculateur Accessibilité",
-      description:
-        "Ce calculateur t'aide à calculer le prix maximal d'une propriété que tu peux te permettre en fonction de la règle selon laquelle le prix d'une propriété ne doit pas dépasser 28% des revenus annuels bruts.",
-      year: "2025",
+      icon: "🏠",
+      description: "Calcule le prix max d'une propriété que tu peux te permettre.",
       tag: "Immobilier",
     },
     {
       link: "/outils/calculateur-plex",
       title: "Calculateur Plex",
-      imageSrc: "/calculateur-plex.png",
-      alt: "Calculateur Plex",
-      description:
-        "Vous êtes-vous déjà demandé combien ça coûte, vraiment, un immeuble à revenus? Et quel serait le potentiel projeté de revenus et de profits? C'est ce que vous pouvez calculer et estimer facilement à l'aide de ce fichier.",
-      year: "2024",
+      icon: "🏢",
+      description: "Estime les revenus et profits d'un immeuble à revenus.",
       tag: "Immobilier",
     },
     {
       link: "/outils/acheter-vs-louer",
       title: "Acheter vs. Louer",
-      imageSrc: "/acheter-vs-louer.png",
-      alt: "Calculateur Acheter vs. Louer",
-      description:
-        "La question à... plusieurs centaines de milliers de dollars. Qu'est-ce qui est plus rentable, financièrement parlant – acheter une propriété pour l'habiter, ou en louer une? C'est ce à quoi ce fichier Excel peut vous aider à répondre. ",
-      year: "2024",
+      icon: "🤔",
+      description: "Compare la rentabilité d'acheter vs louer.",
       tag: "Immobilier",
     },
     {
       link: "/outils/calculatrice-hypothecaire",
       title: "Calculatrice Hypothécaire",
-      imageSrc: "/calculatrice-hypothecaire.png",
-      alt: "Calculatrice hypothécaire",
-      description:
-        "Une calculatrice simple et agréable à utiliser qui t'aide à comprendre à quoi ressemble ton calendrier d'amortissement hypothécaire. Tu verras aussi combien, au total, tu auras payé d'intérêts à la fin de ton prêt.",
-      year: "2024",
+      icon: "🏦",
+      description: "Comprends ton calendrier d'amortissement hypothécaire.",
       tag: "Immobilier",
     },
   ];
@@ -178,7 +144,7 @@ export default function Home() {
         })}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div className="flex flex-col divide-y divide-zinc-100 dark:divide-zinc-800/50">
         {filteredThumbnails.map((item, index) => (
           <Thumbnail key={index} {...item} views={viewCounts[item.link] || 0} />
         ))}

@@ -35,7 +35,17 @@ export function Navbar() {
             <p className="text-sm md:text-base">Mes Finances</p>
           </a>
 
-          <div className="flex flex-row space-x-0">
+          <div className="flex flex-row items-center space-x-0">
+            <button
+              onClick={() => {
+                document.dispatchEvent(
+                  new KeyboardEvent("keydown", { key: "k", metaKey: true })
+                );
+              }}
+              className="hidden md:flex items-center gap-1.5 text-xs text-zinc-400 dark:text-zinc-500 border border-zinc-200 dark:border-zinc-700 rounded-md px-2 py-1 mr-2 hover:text-zinc-600 dark:hover:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-600 transition-colors cursor-pointer"
+            >
+              <kbd className="font-sans">⌘K</kbd>
+            </button>
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link

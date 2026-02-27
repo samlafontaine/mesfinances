@@ -1,16 +1,16 @@
 "use client";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { ArrowUpRight, Eye, Sparkles } from "lucide-react";
+import { ArrowUpRight, Eye } from "lucide-react";
 
 interface ThumbnailProps {
   link: string;
   title: string;
   description: string;
-  imageSrc: string;
-  alt: string;
-  year: string;
+  icon: string;
   tag: string;
+  imageSrc?: string;
+  alt?: string;
+  year?: string;
   popular?: boolean;
   views?: number;
 }
@@ -19,26 +19,12 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
   link,
   title,
   description,
-  imageSrc,
-  alt,
-  year,
-  tag,
-  popular,
+  icon,
   views,
 }) => {
   const router = useRouter();
 
-  const tagBgColorMap: { [key: string]: string } = {
-    Immobilier: "bg-green-700",
-    Autre: "bg-red-500",
-    "Finances personnelles": "bg-blue-500",
-    // Add more mappings here as needed
-  };
-
-  const tagBgColor = tagBgColorMap[tag] || "bg-zinc-900";
-
   const handleClick = () => {
-    // Fire and forget — don't block navigation
     fetch("/api/views", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -53,61 +39,32 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
   };
 
   return (
-    <div className="relative">
-      <div onClick={handleClick} className="block cursor-pointer">
-        {popular && (
-          <div className="absolute -top-2 -right-1 bg-yellow-500 text-yellow-50 px-2 py-1 rounded-full text-xs font-medium z-10 shadow-sm">
-            <Sparkles strokeWidth={1.5} className="inline h-4 w-4" /> populaire
-          </div>
-        )}
-        <div className="flex flex-col p-0.5 rounded-md bg-zinc-50 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 group">
-          <div className="flex flex-col p-3 md:p-1 rounded-md bg-zinc-100 gap-0 md:gap-6 dark:bg-zinc-800 pb-3 md:pb-1">
-            <div className="min-h-40 rounded hidden md:flex items-center justify-center">
-              <Image
-                src={imageSrc}
-                width={400}
-                height={100}
-                alt={alt}
-                className="rounded"
-              />
-            </div>
-            <div className="flex flex-col gap-3 px-3 md:px-2">
-              <div className="flex flex-col justify-between items-left gap-1 md:gap-3">
-                <div className="flex flex-row items-center gap-1">
-                  <h2 className="text-lg text-left tracking-tighter group-hover:underline underline-offset-3 transition duration-300 ease-in-out">
-                    {title}
-                  </h2>
-                  <ArrowUpRight
-                    strokeWidth={1.5}
-                    size={18}
-                    className="group-hover:rotate-45 transition duration-150 ease-in-out"
-                  />
-                  {views !== undefined && (
-                    <div className="flex md:hidden items-center gap-1 text-xs text-muted-foreground ml-auto">
-                      <Eye size={14} strokeWidth={1.5} />
-                      <span>{views.toLocaleString("fr-CA")}</span>
-                    </div>
-                  )}
-                </div>
-                <div className="flex flex-row justify-between items-center">
-                  <div
-                    className={`hidden md:block text-center px-2 py-1 rounded text-xs uppercase text-zinc-200 dark:text-zinc-900 ${tagBgColor}`}
-                  >
-                    {tag}
-                  </div>
-                  {views !== undefined && (
-                    <div className="hidden md:flex items-center gap-1 text-xs text-muted-foreground">
-                      <Eye size={14} strokeWidth={1.5} />
-                      <span>{views.toLocaleString("fr-CA")}</span>
-                    </div>
-                  )}
-                </div>
-              </div>
-              <p className="text-left text-sm mb-2">{description}</p>
-            </div>
-          </div>
-        </div>
+    <div
+      onClick={handleClick}
+      className="flex items-center gap-4 px-4 py-4 rounded-xl cursor-pointer hover:bg-zinc-100 dark:hover:bg-zinc-800/60 transition-colors duration-150 group"
+    >
+      <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-xl shrink-0">
+        {icon}
       </div>
+      <div className="flex-1 min-w-0 text-left">
+        <h2 className="text-[15px] font-medium tracking-tight text-zinc-900 dark:text-zinc-100">
+          {title}
+        </h2>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400 truncate">
+          {description}
+        </p>
+      </div>
+      {views !== undefined && (
+        <div className="flex items-center gap-1 text-xs text-zinc-400 dark:text-zinc-500 shrink-0">
+          <Eye size={14} strokeWidth={1.5} />
+          <span>{views.toLocaleString("fr-CA")}</span>
+        </div>
+      )}
+      <ArrowUpRight
+        strokeWidth={1.5}
+        size={16}
+        className="shrink-0 text-zinc-400 dark:text-zinc-500 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 group-hover:rotate-45 transition duration-150"
+      />
     </div>
   );
 };
