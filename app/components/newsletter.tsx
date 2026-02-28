@@ -7,9 +7,12 @@ export function Newsletter() {
           Reçois mes nouveaux outils et articles directement dans tes courriels.
         </p>
         <div
+          className="w-full"
           dangerouslySetInnerHTML={{
             __html: `
-          <style>@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');</style>
+          <style>@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+          @media (max-width: 767px) { .newsletter-form-container { width: 100% !important; } .newsletter-form { flex-direction: column !important; gap: 8px; width: 100% !important; } .newsletter-form-input { margin: 0 !important; max-width: 100% !important; width: 100% !important; text-align: center !important; } .newsletter-form-button { width: 100% !important; max-width: 100% !important; } }
+          </style>
           <div class="newsletter-form-container">
             <form class="newsletter-form" action="https://app.loops.so/api/newsletter-form/cm6my2mby00h8xs71fqbzooe5" method="POST" style="display: flex; flex-direction: row; align-items: center; justify-content: center; width: 100%;">
               <input class="newsletter-form-input" name="newsletter-form-input" type="email" placeholder="toi@exemple.com" required style="font-family: Inter, sans-serif; color: rgb(0, 0, 0); font-size: 14px; margin: 0px 10px 0px 0px; width: 100%; max-width: 300px; min-width: 100px; background: rgb(255, 255, 255); border: 1px solid rgb(209, 213, 219); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px; border-radius: 6px; padding: 8px 12px;">

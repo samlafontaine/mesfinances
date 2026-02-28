@@ -1,0 +1,27 @@
+# Mes Finances
+
+> Outils, calculatrices et ressources gratuites pour aider les Québécois et Canadiens à prendre de meilleures décisions financières.
+
+Mes Finances est un site web francophone créé par Sam, un développeur montréalais. Le site offre des calculatrices et outils interactifs couvrant les finances personnelles et l'immobilier au Québec et au Canada.
+
+## Outils - Finances personnelles
+
+- [Calculateur d'impôt](https://mesfinances.co/outils/calculateur-impot): Estime tes impôts provinciaux (Québec) et fédéraux (Canada) pour 2025. Inclut les paliers d'imposition, le taux marginal et le taux effectif.
+- [Fonds d'urgence](https://mesfinances.co/outils/fonds-urgence): Calcule le montant idéal de ton fonds d'urgence selon tes dépenses mensuelles.
+- [CELI vs REER](https://mesfinances.co/outils/celi-vs-reer): Découvre si tu devrais cotiser à ton CELI ou ton REER selon ta situation fiscale.
+- [Calculateur RQAP](https://mesfinances.co/outils/rqap): Calcule tes prestations du Régime québécois d'assurance parentale (RQAP) selon ton salaire.
+- [Intérêts composés](https://mesfinances.co/outils/interets-composes): Visualise la croissance de tes investissements grâce aux intérêts composés.
+
+## Outils - Immobilier
+
+- [Frais de courtage](https://mesfinances.co/outils/frais-courtage): Estime les frais de courtage immobilier selon le prix de vente au Québec.
+- [Accessibilité immobilière](https://mesfinances.co/outils/calculateur-accessibilite): Calcule le prix maximum d'une propriété que tu peux te permettre.
+- [Calculateur Plex](https://mesfinances.co/outils/calculateur-plex): Estime les revenus et profits d'un immeuble à revenus (duplex, triplex, etc.).
+- [Acheter vs. Louer](https://mesfinances.co/outils/acheter-vs-louer): Compare la rentabilité d'acheter versus louer une propriété.
+- [Calculatrice Hypothécaire](https://mesfinances.co/outils/calculatrice-hypothecaire): Comprends ton calendrier d'amortissement hypothécaire avec les paiements en capital et intérêts.
+
+## Autres pages
+
+- [À propos](https://mesfinances.co/a-propos): À propos de Sam, le créateur du site.
+- [Blog](https://mesfinances.co/blog): Articles sur les finances personnelles au Québec.
+- [llms-full.txt](https://mesfinances.co/llms-full.txt): Version détaillée de ce fichier avec le contenu complet de chaque outil.

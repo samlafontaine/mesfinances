@@ -1,0 +1,150 @@
+# Mes Finances
+
+> Outils, calculatrices et ressources gratuites pour aider les Québécois et Canadiens à prendre de meilleures décisions financières.
+
+Mes Finances (mesfinances.co) est un site web francophone créé par Sam, un développeur et jeune papa montréalais de 32 ans. Le site offre des calculatrices et outils interactifs gratuits couvrant les finances personnelles et l'immobilier au Québec et au Canada. Tout le contenu est en français et adapté au contexte fiscal québécois et canadien.
+
+---
+
+## Calculateur d'impôt
+
+URL: https://mesfinances.co/outils/calculateur-impot
+
+Calculateur d'impôt sur le revenu pour les résidents du Québec (Canada) pour l'année fiscale 2025.
+
+### Paliers d'imposition fédéraux (Canada) 2025
+- 0 $ à 57 375 $ : 15 %
+- 57 375 $ à 114 750 $ : 20,5 %
+- 114 750 $ à 158 468 $ : 26 %
+- 158 468 $ à 220 000 $ : 29 %
+- 220 000 $ et plus : 33 %
+- Montant personnel de base fédéral : 16 129 $
+- Abattement du Québec : 16,5 %
+
+### Paliers d'imposition provinciaux (Québec) 2025
+- 0 $ à 53 255 $ : 14 %
+- 53 255 $ à 106 495 $ : 19 %
+- 106 495 $ à 129 590 $ : 24 %
+- 129 590 $ et plus : 25,75 %
+- Montant personnel de base Québec : 18 571 $
+
+### Cotisations salariales 2025
+- RRQ (Régime de rentes du Québec) : 6,4 % (max 71 300 $, exemption 3 500 $)
+- Assurance-emploi : 1,27 % (max 65 000 $)
+- RQAP (Régime québécois d'assurance parentale) : 0,494 % (max 98 000 $)
+
+Le calculateur affiche le revenu brut, l'impôt fédéral, l'impôt provincial, les cotisations, le revenu net, le taux marginal combiné et le taux effectif d'imposition.
+
+---
+
+## Fonds d'urgence
+
+URL: https://mesfinances.co/outils/fonds-urgence
+
+Calculateur pour déterminer le montant idéal de ton fonds d'urgence selon ta situation personnelle.
+
+### Catégories de dépenses mensuelles
+- Loyer / hypothèque
+- Épicerie
+- Transport
+- Assurances
+- Télécommunications
+- Électricité
+- Autres dépenses
+
+### Facteurs d'ajustement
+- Type d'emploi : stable, contractuel ou autonome
+- Nombre de personnes à charge : 0, 1-2, ou 3+
+
+Le calculateur recommande un nombre de mois de dépenses à couvrir selon la stabilité d'emploi et les obligations familiales.
+
+---
+
+## CELI vs REER
+
+URL: https://mesfinances.co/outils/celi-vs-reer
+
+Arbre de décision interactif pour déterminer s'il est préférable de cotiser au CELI (Compte d'épargne libre d'impôt) ou au REER (Régime enregistré d'épargne-retraite).
+
+### Points clés
+- Le CELI est un compte où les retraits sont libres d'impôt, idéal pour les revenus plus faibles ou pour l'épargne à court/moyen terme.
+- Le REER offre une déduction fiscale à la cotisation, idéal quand le taux marginal actuel est élevé et qu'on prévoit un taux plus bas à la retraite.
+- L'outil pose des questions sur le revenu, le taux marginal, les objectifs et la situation pour donner une recommandation personnalisée.
+
+---
+
+## Calculateur RQAP
+
+URL: https://mesfinances.co/outils/rqap
+
+Calculateur des prestations du Régime québécois d'assurance parentale (RQAP) selon le salaire annuel.
+
+### Régimes disponibles
+- **Régime de base** : prestations plus longues à un taux moins élevé.
+- **Régime particulier** : prestations plus courtes à un taux plus élevé.
+
+### Types de prestations
+- Prestations de maternité
+- Prestations de paternité
+
+### Paramètres 2025
+- Revenu assurable maximum : 103 000 $
+- Régime de base maternité : 70 % du salaire pendant 18 semaines
+- Régime particulier maternité : 75 % du salaire pendant 15 semaines
+- Régime de base paternité : 70 % du salaire pendant 5 semaines
+
+---
+
+## Intérêts composés
+
+URL: https://mesfinances.co/outils/interets-composes
+
+Calculateur et visualisation de la croissance des investissements grâce aux intérêts composés. Permet de voir la différence entre le capital investi et les intérêts accumulés au fil du temps.
+
+---
+
+## Frais de courtage
+
+URL: https://mesfinances.co/outils/frais-courtage
+
+Calculateur des frais de courtage immobilier au Québec. Estime la commission du courtier selon le prix de vente de la propriété.
+
+---
+
+## Accessibilité immobilière
+
+URL: https://mesfinances.co/outils/calculateur-accessibilite
+
+Calcule le prix maximum d'une propriété que tu peux te permettre selon ton revenu, ta mise de fonds et tes dettes existantes. Prend en compte les règles hypothécaires canadiennes.
+
+---
+
+## Calculateur Plex
+
+URL: https://mesfinances.co/outils/calculateur-plex
+
+Outil pour estimer les revenus et la rentabilité d'un immeuble à revenus (duplex, triplex, quadruplex, etc.) au Québec. Inclut les revenus de loyer, les dépenses et le calcul du rendement.
+
+---
+
+## Acheter vs. Louer
+
+URL: https://mesfinances.co/outils/acheter-vs-louer
+
+Comparateur financier pour déterminer s'il est plus rentable d'acheter ou de louer une propriété. Prend en compte l'appréciation immobilière, les coûts de propriété, le rendement des investissements alternatifs et le coût d'opportunité.
+
+---
+
+## Calculatrice Hypothécaire
+
+URL: https://mesfinances.co/outils/calculatrice-hypothecaire
+
+Calculatrice d'amortissement hypothécaire qui affiche le calendrier complet des paiements. Montre la répartition entre le capital et les intérêts pour chaque paiement, ainsi que le solde restant au fil du temps.
+
+---
+
+## À propos
+
+URL: https://mesfinances.co/a-propos
+
+Mes Finances est créé par Sam, un jeune papa montréalais de 32 ans qui travaille dans le milieu des technologies de l'information. Le site a été lancé début 2024 pour combiner ses passions pour le développement web et la finance personnelle, et pour aider les gens à prendre de meilleures décisions financières. Le site traite principalement de finances personnelles, de frugalité, d'épargne, d'investissement et de mode de vie au Québec.
